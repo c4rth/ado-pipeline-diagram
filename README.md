@@ -11,12 +11,15 @@ The pipeline must have stages, jobs, steps.
 Edit the generated diagram with a DrawIo extension or website. 
 
 ## Known issues
-
 - Not supported:
     - Job strategy
     - Job without `job` like deployment, 
     - Task without `task:` like checkout, script, bash, ...
     - ...
+
+## Todos
+- Generate POJO from json schema : https://github.com/microsoft/azure-pipelines-vscode/blob/main/service-schema.json
+- Support the unsupported
 
 ## Sample 
 Only for illustration purpose
