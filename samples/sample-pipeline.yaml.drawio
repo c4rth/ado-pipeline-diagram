@@ -1,0 +1,81 @@
+<mxGraphModel grid="1" gridSize="10" guides="1" pageScale="1" pageSize="1" shadow="0">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    <mxCell id="22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=17;" value="Build" vertex="1">
+      <mxGeometry as="geometry" height="790.0" width="240.0" x="10.0" y="10.0"/>
+    </mxCell>
+    <mxCell id="7" parent="22" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=15;" value="Build" vertex="1">
+      <mxGeometry as="geometry" height="230.0" width="220.0" x="10.0" y="50.0"/>
+    </mxCell>
+    <mxCell id="2" parent="7" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" value="Create build container" vertex="1">
+      <mxGeometry as="geometry" height="50.0" width="200.0" x="10.0" y="50.0"/>
+    </mxCell>
+    <mxCell id="3" parent="7" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" value="Copy source into container folder" vertex="1">
+      <mxGeometry as="geometry" height="50.0" width="200.0" x="10.0" y="110.0"/>
+    </mxCell>
+    <mxCell edge="1" id="4" parent="7" source="2" target="3">
+      <mxGeometry as="geometry" relative="1"/>
+    </mxCell>
+    <mxCell id="5" parent="7" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" value="Compile app" vertex="1">
+      <mxGeometry as="geometry" height="50.0" width="200.0" x="10.0" y="170.0"/>
+    </mxCell>
+    <mxCell edge="1" id="6" parent="7" source="3" target="5">
+      <mxGeometry as="geometry" relative="1"/>
+    </mxCell>
+    <mxCell id="17" parent="22" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=15;" value="Publish" vertex="1">
+      <mxGeometry as="geometry" height="350.0" width="220.0" x="10.0" y="300.0"/>
+    </mxCell>
+    <mxCell id="8" parent="17" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" value="Copy app into build artifacts staging folder" vertex="1">
+      <mxGeometry as="geometry" height="50.0" width="200.0" x="10.0" y="50.0"/>
+    </mxCell>
+    <mxCell id="9" parent="17" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" value="Publish and install app into container" vertex="1">
+      <mxGeometry as="geometry" height="50.0" width="200.0" x="10.0" y="110.0"/>
+    </mxCell>
+    <mxCell edge="1" id="10" parent="17" source="8" target="9">
+      <mxGeometry as="geometry" relative="1"/>
+    </mxCell>
+    <mxCell id="11" parent="17" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" value="Run tests" vertex="1">
+      <mxGeometry as="geometry" height="50.0" width="200.0" x="10.0" y="170.0"/>
+    </mxCell>
+    <mxCell edge="1" id="12" parent="17" source="9" target="11">
+      <mxGeometry as="geometry" relative="1"/>
+    </mxCell>
+    <mxCell id="13" parent="17" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" value="Upload test results" vertex="1">
+      <mxGeometry as="geometry" height="50.0" width="200.0" x="10.0" y="230.0"/>
+    </mxCell>
+    <mxCell edge="1" id="14" parent="17" source="11" target="13">
+      <mxGeometry as="geometry" relative="1"/>
+    </mxCell>
+    <mxCell id="15" parent="17" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" value="Publish build artifacts" vertex="1">
+      <mxGeometry as="geometry" height="50.0" width="200.0" x="10.0" y="290.0"/>
+    </mxCell>
+    <mxCell edge="1" id="16" parent="17" source="13" target="15">
+      <mxGeometry as="geometry" relative="1"/>
+    </mxCell>
+    <mxCell edge="1" id="18" parent="22" source="7" target="17">
+      <mxGeometry as="geometry" relative="1"/>
+    </mxCell>
+    <mxCell id="20" parent="22" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=15;" value="CleanUp" vertex="1">
+      <mxGeometry as="geometry" height="110.0" width="220.0" x="10.0" y="670.0"/>
+    </mxCell>
+    <mxCell id="19" parent="20" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" value="Remove build container" vertex="1">
+      <mxGeometry as="geometry" height="50.0" width="200.0" x="10.0" y="50.0"/>
+    </mxCell>
+    <mxCell edge="1" id="21" parent="22" source="17" target="20">
+      <mxGeometry as="geometry" relative="1"/>
+    </mxCell>
+    <mxCell id="25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=17;" value="Release" vertex="1">
+      <mxGeometry as="geometry" height="170.0" width="240.0" x="300.0" y="10.0"/>
+    </mxCell>
+    <mxCell id="24" parent="25" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=15;" value="Release" vertex="1">
+      <mxGeometry as="geometry" height="110.0" width="220.0" x="10.0" y="50.0"/>
+    </mxCell>
+    <mxCell id="23" parent="24" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" value="Copy artifacts to release directory" vertex="1">
+      <mxGeometry as="geometry" height="50.0" width="200.0" x="10.0" y="50.0"/>
+    </mxCell>
+    <mxCell edge="1" id="26" parent="1" source="22" style="edgeStyle=orthogonalEdgeStyle;" target="25">
+      <mxGeometry as="geometry" relative="1"/>
+    </mxCell>
+  </root>
+</mxGraphModel>
